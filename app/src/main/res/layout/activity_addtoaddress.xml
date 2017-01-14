@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.haishu.SevenBreakFast.view.TitleBarView
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="学校名"
+                android:textSize="20dp"
+                android:textColor="@color/color_333333"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:id="@+id/address_college"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:textColor="@color/color_444444"
+                android:hint="添加院校"
+                android:padding="10dp"
+                android:textColorHint="@color/grey_bg" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_bg" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="楼栋号"
+                android:textSize="20dp"
+                android:textColor="@color/color_333333"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:id="@+id/addressBuild"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:textColor="@color/color_444444"
+                android:hint="添加宿舍楼"
+                android:editable="false"
+                android:padding="10dp"
+                android:paddingLeft="5dp"
+                android:textColorHint="@color/grey_bg" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_bg" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="宿舍号"
+                android:textSize="20dp"
+                android:textColor="@color/color_333333"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/address_door"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:textColor="@color/color_444444"
+                android:hint="补充信息、宿舍号"
+                android:padding="10dp"
+                android:textColorHint="@color/grey_bg" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_bg" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="性    别"
+                android:textSize="20dp"
+                android:textColor="@color/color_333333"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"/>
+            <RadioGroup
+                android:id="@+id/rg_sex"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rb_man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="男"
+                    android:textColor="@color/color_444444"/>
+                <RadioButton
+                    android:id="@+id/rb_woman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="女"
+                    android:textColor="@color/color_444444"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="联系人"
+                android:textSize="20dp"
+                android:textColor="@color/color_333333"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:id="@+id/address_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:hint="联系人姓名"
+                android:textColor="@color/color_444444"
+                android:padding="10dp"
+                android:textColorHint="@color/grey_bg" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="手机号"
+                android:textSize="20dp"
+                android:textColor="@color/color_333333"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:id="@+id/address_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:textColor="@color/color_444444"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:hint="收货人手机号"
+                android:padding="10dp"
+                android:textColorHint="@color/grey_bg" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_bg" />
+
+    <Button
+        android:id="@+id/address_sure"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:text="确定"
+        android:textColor="@color/text_sure"
+        android:visibility="gone" />
+
+
+</LinearLayout>

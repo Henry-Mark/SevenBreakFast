@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="view_small_padding">1dp</dimen>
+    <dimen name="view_padding">6dp</dimen>
+    <dimen name="tabwidget_height">55.0dp</dimen>
+    <dimen name="textview12">12dp</dimen>
+    <dimen name="textview14">14dp</dimen>
+    <dimen name="textview16">16dp</dimen>
+    <dimen name="textview18">18dp</dimen>
+
+
+</resources>
